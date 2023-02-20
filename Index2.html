@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Age: The Roman Empire</title>
 </head>
+    <script>
+$('.select-language').on('change',function(){
+    var value = $(this).val();
+    location.href = 'http://your-url.com/'+ value +'.html'; //or .php, etc. This will go to a page called en.html
+    });
+</script>
 <body>
     <h1>Iron Age: The Roman Empire</h1>
     <h4>By Shourya, Aayan And Sahibjit</h4>
@@ -30,7 +36,11 @@
     <button>
     <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Froman-empire.net%2Fmaps%2Fmodern-day-countries%2F&psig=AOvVaw3qwSOoZUK9oNIBGRXu_f00&ust=1676854760983000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJCMubeyoP0CFQAAAAAdAAAAABAD"> Click here to see comparison of Rome and Modern Day</a>
     </button>
-    <form > <select name="Different Periods Of TIme" onChange="window.open(this.options[this.selectedIndex].value,'_self')"> <option value="https://nerd2webwizard.github.io/2ndWebsite/Index2.html">Iron Age</option> <option value="https://nerd2webwizard.github.io/Website1/Index.html ">Bronze Age</option> </select> </form>
+    <form > <select name="Different Periods Of TIme" class="select-language selectpicker"> 
+        <option value="https://nerd2webwizard.github.io/2ndWebsite/Index2.html">Iron Age</option>
+        <option value="https://nerd2webwizard.github.io/Website1/Index.html ">Bronze Age</option> 
+        </select> 
+    </form>
       
   
 </select>
